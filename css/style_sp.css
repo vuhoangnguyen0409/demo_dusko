@@ -1,0 +1,118 @@
+@charset "utf-8";
+@media screen and (max-width: 767px) {
+  .btn_nav {
+    display: block;
+    height: 32px;
+    width: 32px;
+    position: fixed;
+    z-index: 99999;
+    top: 10px;
+    right: 15px;
+  }
+  .btn_nav span {
+    display: block;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+    -webkit-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    position: relative;
+  }
+  .btn_actived span:first-child {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    top: 8px;
+  }
+	.btn_actived span:last-child {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    bottom: 8px;
+  }
+  .btn_actived .midde {
+    opacity: 0;
+  }
+  #header_area {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    background: #fff;
+    border-bottom: 2px solid #f23332;
+    left: -100%;
+    -webkit-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+  }
+  header.nav_actived {
+    left: 0;
+  }
+  #logo {
+    margin: 0;
+    padding: 50px 0;
+  }
+  h1 {
+    font-size: 50px;
+    position: static;
+    transform: none;
+    width: auto;
+    padding: 0 5%;
+  }
+  .video_btn {
+    margin: 20px 0;
+  }
+  h2 {
+    width: 90%;
+  }
+  #nav {
+    float: none;
+  }
+  #nav ul li {
+    display: block;
+    padding: 0 0 0 16px;
+  }
+  #nav ul li a {
+    display: block;
+    padding: 16px;
+  }
+  .shop_btn {
+    display: none;
+  }
+  .line {
+    height: 200px;
+  }
+  #brand, .bg_brand {
+    height: auto;
+  }
+  .txt_brand {
+    position: static;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .ani_img {
+    position: static;
+    text-align: center;
+    width: auto;
+    padding: 15px 0;
+  }
+  .title_brand, .txt_brand {
+    color: #333;
+    width: auto;
+  }
+  .title_brand {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

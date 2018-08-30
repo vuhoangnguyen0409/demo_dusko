@@ -1,0 +1,6 @@
+@charset "utf-8";
+@media screen and (max-width: 979px) and (min-width: 768px) {
+	.title02 {
+		width: 90%;
+	}
+}
